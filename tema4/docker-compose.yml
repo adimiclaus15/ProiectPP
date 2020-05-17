@@ -1,0 +1,11 @@
+version: '2.1'
+
+services:
+    crc_http:
+        image: snisioi/cap2:latest
+        volumes:
+            - .:/elocal
+        tty: true
+        ports:
+         - "80:8001" # schimbati-le in functie de portul pe care il doriti deschis
+        #command: bash -c "python3 /elocal/src/crc_api.py" 
